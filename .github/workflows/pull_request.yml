@@ -19,3 +19,22 @@ jobs:
       - name: Run pre-commit checks
         run: |
           uvx pre-commit run --all-files
+
+      - name: Checkout zed repo
+        uses: actions/checkout@v4
+        with:
+          repository: zed-industries/zed
+          path: zed
+
+      - name: Install mold linker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y mold
+
+      - name: Create scratch_dir
+        run: mkdir -p "${{ runner.temp }}/zed-theme-scratch"
+
+      - name: Run zed-extension
+        run: |
+          cargo run -p extension_cli -- --source-dir $GITHUB_WORKSPACE --output-dir "${{ runner.temp }}/zed-theme-out" --scratch-dir "${{ runner.temp }}/zed-theme-scratch"
+        working-directory: ./zed
