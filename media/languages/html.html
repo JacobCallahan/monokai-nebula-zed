@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><title>Sample HTML</title>
+    <style>
+        :root { --primary: #3498db; --size: 1.5rem; }
+        body { margin: 0; font-family: 'Arial', sans-serif; background: linear-gradient(45deg, #f0f0f0, #fff); }
+        .container > div:nth-child(odd) { color: var(--primary); font-size: calc(var(--size) * 1.2); }
+        #header::before { content: "★ "; color: #ff6b6b; }
+        input[type="text"]:focus { border: 2px solid rgba(255,0,0,0.5); box-shadow: 0 0 5px rgba(0,0,0,0.3); }
+        @media (max-width: 768px) { .responsive { display: none !important; } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header id="header"><h1>Sample Document</h1>
+        <nav><a href="#section1" data-target="first">Home</a> <a href="https://example.com" target="_blank" rel="noopener">External</a></nav>
+    </header>
+    <main class="container">
+        <section id="section1" aria-label="Primary content">
+            <h2>Data Processing</h2>
+            <p>Lorem <strong>dolor</strong> <em>amet</em>, <code>console.log()</code> &amp; adipiscing.</p>
+            <ul><li data-id="1">Item <span>42</span></li><li data-id="2">Value: <kbd>Ctrl+C</kbd></li></ul>
+        </section>
+        <aside class="responsive"><blockquote cite="https://example.com">"Quote with <mark>highlighted</mark> text."</blockquote></aside>
+        <form action="/submit" method="post" enctype="multipart/form-data">
+            <fieldset><legend>Input</legend>
+                <label for="username">Name:</label><input type="text" id="username" required placeholder="Enter name">
+                <label for="message">Message:</label><textarea id="message" rows="3" disabled>Default</textarea>
+                <input type="checkbox" id="agree" checked><label for="agree">Agree</label>
+                <button type="submit" onclick="return false;">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+    <script>
+        const config = { debug: true, version: 1.2 };
+        document.addEventListener('DOMContentLoaded', () => console.log(`Loaded: ${config.version}`));
+    </script>
+</body>
+</html>
