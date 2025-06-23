@@ -1,6 +1,6 @@
 id = "monokai-nebula"
 name = "Monokai Nebula"
-version = "0.2.3"
+version = "0.2.4"
 schema_version = 1
 authors = ["Jake Callahan <jacob.callahan05@gmail.com>"]
 repository = "https://github.com/jacobcallahan/monokai-nebula-zed"
