@@ -33,6 +33,7 @@
         "editor.foreground": "#f8f8f2",
         "editor.gutter.background": "#101010",
         "editor.highlighted_line.background": "#2a2a2a",
+        "editor.hover_line_number": "#f8f8f2",
         "editor.invisible": "#75715e80",
         "editor.line_number": "#75715e",
         "editor.subheader.background": null,
@@ -82,22 +83,27 @@
         "players": [
           {
             "cursor": "#66d9ff",
+            "background": "#101010",
             "selection": "#66d9ff10"
           },
           {
             "cursor": "#f92672",
+            "background": "#101010",
             "selection": "#f9267210"
           },
           {
             "cursor": "#a6ff2e",
+            "background": "#101010",
             "selection": "#a6ff2e10"
           },
           {
             "cursor": "#ae81ff",
+            "background": "#101010",
             "selection": "#ae81ff10"
           },
           {
             "cursor": "#ff971f",
+            "background": "#101010",
             "selection": "#ff971f10"
           }
         ],
@@ -109,7 +115,7 @@
         "renamed.border": "#e6db7460",
         "scrollbar.thumb.active_background": "#66d9ff50",
         "scrollbar.thumb.background": "#66d9ff10",
-        "scrollbar.thumb.border": "#66d9ff",
+        "scrollbar.thumb.border": "#66d9ff10",
         "scrollbar.thumb.hover_background": "#66d9ff30",
         "scrollbar.track.background": "#050505",
         "scrollbar.track.border": null,
@@ -160,6 +166,11 @@
             "font_style": null,
             "font_weight": null
           },
+          "emphasis.strong": {
+            "color": "#ff971f",
+            "font_style": null,
+            "font_weight": 700
+          },
           "enum": {
             "color": "#ae81ff",
             "font_style": null,
@@ -197,6 +208,16 @@
           },
           "link_text": {
             "color": "#66d9ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_uri": {
+            "color": "#66d9ff",
+            "font_style": null,
+            "font_weight": null
+          },
+          "namespace": {
+            "color": "#f8f8f2",
             "font_style": null,
             "font_weight": null
           },
@@ -252,6 +273,16 @@
           },
           "punctuation.special": {
             "color": "#f92672",
+            "font_style": null,
+            "font_weight": null
+          },
+          "selector": {
+            "color": "#a6ff2e",
+            "font_style": null,
+            "font_weight": null
+          },
+          "selector.pseudo": {
+            "color": "#66d9ff",
             "font_style": null,
             "font_weight": null
           },
@@ -358,10 +389,16 @@
         "text.muted": "#FFFFFF",
         "text.placeholder": null,
         "title_bar.background": "#050505",
+        "title_bar.inactive_background": "#000000",
         "toolbar.background": "#050505",
         "unreachable": "#75715e",
         "unreachable.background": "#75715e20",
         "unreachable.border": "#75715e60",
+        "version_control.added": "#a6ff2e",
+        "version_control.modified": "#e6db74",
+        "version_control.deleted": "#f92672",
+        "version_control.conflict_marker.ours": "#a6ff2e1a",
+        "version_control.conflict_marker.theirs": "#66d9ff1a",
         "warning": "#ff971f",
         "warning.background": "#ff971f20",
         "warning.border": "#ff971f60"
@@ -397,6 +434,7 @@
         "editor.foreground": "#272822",
         "editor.gutter.background": "#f0f0f0",
         "editor.highlighted_line.background": "#dbdbdb",
+        "editor.hover_line_number": "#272822",
         "editor.invisible": "#75715e80",
         "editor.line_number": "#939383",
         "editor.subheader.background": null,
@@ -446,22 +484,27 @@
         "players": [
           {
             "cursor": "#0383b5",
+            "background": "#f0f0f0",
             "selection": "#0383b540"
           },
           {
             "cursor": "#d81655",
+            "background": "#f0f0f0",
             "selection": "#d8165510"
           },
           {
             "cursor": "#54a802",
+            "background": "#f0f0f0",
             "selection": "#54a80210"
           },
           {
             "cursor": "#9d22e9",
+            "background": "#f0f0f0",
             "selection": "#9d22e910"
           },
           {
             "cursor": "#dd7100",
+            "background": "#f0f0f0",
             "selection": "#dd710010"
           }
         ],
@@ -473,7 +516,7 @@
         "renamed.border": "#a68a0a60",
         "scrollbar.thumb.active_background": "#0383b590",
         "scrollbar.thumb.background": "#0383b560",
-        "scrollbar.thumb.border": "#0383b5",
+        "scrollbar.thumb.border": "#0383b510",
         "scrollbar.thumb.hover_background": "#0383b580",
         "scrollbar.track.background": "#fafafa",
         "scrollbar.track.border": null,
@@ -524,6 +567,11 @@
             "font_style": null,
             "font_weight": null
           },
+          "emphasis.strong": {
+            "color": "#dd7100",
+            "font_style": null,
+            "font_weight": 700
+          },
           "enum": {
             "color": "#9d22e9",
             "font_style": null,
@@ -561,6 +609,16 @@
           },
           "link_text": {
             "color": "#0383b5",
+            "font_style": null,
+            "font_weight": null
+          },
+          "link_uri": {
+            "color": "#0383b5",
+            "font_style": null,
+            "font_weight": null
+          },
+          "namespace": {
+            "color": "#272822",
             "font_style": null,
             "font_weight": null
           },
@@ -722,10 +780,16 @@
         "text.muted": "#505040",
         "text.placeholder": "#93938380",
         "title_bar.background": "#fafafa",
+        "title_bar.inactive_background": "#eeeeee",
         "toolbar.background": "#fafafa",
         "unreachable": "#939383",
         "unreachable.background": "#93938320",
         "unreachable.border": "#93938360",
+        "version_control.added": "#54a802",
+        "version_control.modified": "#a68a0a",
+        "version_control.deleted": "#d81655",
+        "version_control.conflict_marker.ours": "#54a8021a",
+        "version_control.conflict_marker.theirs": "#0383b51a",
         "warning": "#dd7100",
         "warning.background": "#dd710020",
         "warning.border": "#dd710060"
